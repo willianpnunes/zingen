@@ -1,9 +1,9 @@
 .btn {
-    --btn-bg-color:var(--text-color-primay);
+    --btn-bg-color:var(--text-color-primary);
     --btn-color: var(--bg-color);
     border: 0;
     background: transparent;
-    display: flex;
+    display: flex; 
     align-items: center;
     justify-content: center;
     width: fit-content;
@@ -11,12 +11,15 @@
     font: var(--fw-md) var(--fs-base)/1.5rem var(--ff-sans);
     cursor: pointer;
 
-    background-color: var(--btn-bg-color);
+   /*background-color: var(--btn-bg-color);
+    color: var(--btn-color);*/
+
+    background: var(--btn-bg-color);
     color: var(--btn-color);
 }
 
 .btn:hover{
-    --btn-bg-color:linear-gradient(
+    --btn-bg-color: linear-gradient(
         90deg,
         var(--brand-color-secondary) 0%,
         var(--brand-color-primary)100%
@@ -24,7 +27,7 @@
 
     --btn-color:var(--surface-color);
     -webkit-background-clip:initial;
-    background-clip:initial;
+    background: var(--btn-bg-color); /* necessário se quiser aplicar o gradiente */
     color: var(--btn-color);
 }
 
